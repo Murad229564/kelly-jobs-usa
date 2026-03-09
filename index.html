@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Openings Near You - Kelly Services | Find Your Perfect Career Today</title>
+    <meta name="description" content="Discover thousands of job opportunities with Kelly Services. Full-time, part-time, and temp positions. Apply today and start your new career!">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --kelly-green: #00A878;
+            --kelly-green-dark: #008C63;
+            --kelly-blue: #003B5C;
+            --kelly-blue-light: #0056A3;
+            --accent-orange: #FF6B35;
+            --text-dark: #1E1E1E;
+            --text-gray: #5A5A5A;
+            --bg-light: #F8F9FA;
+            --bg-white: #FFFFFF;
+            --border: #E0E0E0;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: var(--bg-white);
+        }
+
+        h1, h2, h3, h4 { font-family: 'Raleway', sans-serif; font-weight: 800; line-height: 1.2; }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ===== HEADER ===== */
+        .header {
+            background: var(--bg-white);
+            border-bottom: 1px solid var(--border);
+            padding: 16px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .brand-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--kelly-green) 0%, var(--kelly-green-dark) 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            font-weight: 900;
+        }
+
+        .logo-text h3 {
+            font-size: 18px;
+            color: var(--kelly-blue);
+            font-weight: 800;
+        }
+
+        .logo-text p {
+            font-size: 11px;
+            color: var(--text-gray);
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .kelly-badge {
+            background: var(--bg-light);
+            padding: 8px 16px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border: 1px solid var(--border);
+        }
+
+        .kelly-logo-text {
+            font-family: 'Raleway', sans-serif;
+            font-size: 18px;
+            font-weight: 900;
+            color: var(--kelly-green);
+        }
+
+        .header-cta {
+            background: var(--kelly-green);
+            color: white;
+            padding: 12px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 15px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .header-cta:hover {
+            background: var(--kelly-green-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 168, 120, 0.3);
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            background: linear-gradient(135deg, var(--kelly-blue) 0%, var(--kelly-blue-light) 100%);
+            padding: 100px 24px 80px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(0, 168, 120, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(255, 107, 53, 0.1) 0%, transparent 50%);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(0, 168, 120, 0.2);
+            border: 1px solid rgba(0, 168, 120, 0.4);
+            color: var(--kelly-green);
+            padding: 10px 24px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 28px;
+            animation: fadeInUp 0.6s ease;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .live-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--kelly-green);
+            border-radius: 50%;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(0, 168, 120, 0.7); }
+            50% { opacity: 0.5; box-shadow: 0 0 0 10px rgba(0, 168, 120, 0); }
+        }
+
+        .hero h1 {
+            font-size: 58px;
+            color: white;
+            margin-bottom: 24px;
+            animation: fadeInUp 0.6s ease 0.1s both;
+        }
+
+        .hero h1 .highlight {
+            color: var(--kelly-green);
+        }
+
+        .hero-subtitle {
+            font-size: 22px;
+            color: rgba(255, 255, 255, 0.95);
+            margin-bottom: 40px;
+            animation: fadeInUp 0.6s ease 0.2s both;
+            line-height: 1.6;
+        }
+
+        .search-box {
+            background: white;
+            border-radius: 12px;
+            padding: 8px;
+            display: flex;
+            gap: 8px;
+            max-width: 600px;
+            margin: 0 auto 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+            animation: fadeInUp 0.6s ease 0.3s both;
+        }
+
+        .search-input {
+            flex: 1;
+            border: none;
+            padding: 16px 20px;
+            font-size: 16px;
+            border-radius: 8px;
+            font-weight: 500;
+        }
+
+        .search-input:focus { outline: none; }
+
+        .search-btn {
+            background: var(--kelly-green);
+            color: white;
+            padding: 16px 32px;
+            border-radius: 8px;
+            border: none;
+            font-weight: 700;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .search-btn:hover {
+            background: var(--kelly-green-dark);
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 48px;
+            flex-wrap: wrap;
+            animation: fadeInUp 0.6s ease 0.4s both;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 40px;
+            font-weight: 900;
+            color: var(--kelly-green);
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 600;
+        }
+
+        /* ===== TRUSTED BY ===== */
+        .trusted {
+            background: var(--bg-light);
+            padding: 40px 24px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .trusted-content {
+            text-align: center;
+        }
+
+        .trusted-title {
+            font-size: 14px;
+            color: var(--text-gray);
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .companies {
+            display: flex;
+            justify-content: center;
+            gap: 48px;
+            flex-wrap: wrap;
+        }
+
+        .company-logo {
+            font-size: 24px;
+            font-weight: 900;
+            color: var(--text-gray);
+            opacity: 0.6;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        /* ===== JOBS SECTION ===== */
+        .jobs-section {
+            padding: 80px 24px;
+            background: white;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-tag {
+            background: rgba(0, 168, 120, 0.1);
+            color: var(--kelly-green-dark);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-block;
+            margin-bottom: 16px;
+        }
+
+        .section-title {
+            font-size: 48px;
+            margin-bottom: 16px;
+            color: var(--kelly-blue);
+        }
+
+        .section-subtitle {
+            font-size: 18px;
+            color: var(--text-gray);
+        }
+
+        .jobs-grid {
+            display: grid;
+            gap: 24px;
+        }
+
+        .job-card {
+            background: white;
+            border: 2px solid var(--border);
+            border-radius: 16px;
+            padding: 32px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .job-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 5px;
+            height: 100%;
+            background: var(--kelly-green);
+            border-radius: 16px 0 0 16px;
+            transform: scaleY(0);
+            transition: transform 0.3s ease;
+        }
+
+        .job-card:hover {
+            border-color: var(--kelly-green);
+            box-shadow: 0 12px 40px rgba(0, 168, 120, 0.15);
+            transform: translateY(-4px);
+        }
+
+        .job-card:hover::before {
+            transform: scaleY(1);
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .job-info {
+            flex: 1;
+        }
+
+        .job-title {
+            font-size: 26px;
+            font-weight: 800;
+            color: var(--kelly-blue);
+            margin-bottom: 8px;
+        }
+
+        .job-company {
+            font-size: 16px;
+            color: var(--text-gray);
+            font-weight: 600;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .kelly-tag {
+            background: var(--kelly-green);
+            color: white;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .job-badges {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            background: rgba(0, 168, 120, 0.1);
+            color: var(--kelly-green-dark);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .job-salary {
+            background: linear-gradient(135deg, var(--kelly-green) 0%, var(--kelly-green-dark) 100%);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 10px;
+            font-weight: 800;
+            font-size: 22px;
+            white-space: nowrap;
+            box-shadow: 0 4px 15px rgba(0, 168, 120, 0.3);
+        }
+
+        .job-details {
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+            padding: 20px 0;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .detail-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-gray);
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        .detail-icon {
+            color: var(--kelly-green);
+        }
+
+        .job-description {
+            color: var(--text-gray);
+            line-height: 1.8;
+            margin-bottom: 24px;
+        }
+
+        .job-benefits {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 24px;
+        }
+
+        .benefit {
+            background: rgba(0, 59, 92, 0.08);
+            color: var(--kelly-blue);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .job-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .urgency {
+            color: var(--accent-orange);
+            font-weight: 700;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .apply-btn {
+            background: var(--kelly-green);
+            color: white;
+            padding: 14px 36px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .apply-btn:hover {
+            background: var(--kelly-green-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 168, 120, 0.3);
+        }
+
+        /* ===== WHY KELLY ===== */
+        .why-kelly {
+            padding: 80px 24px;
+            background: var(--bg-light);
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+        }
+
+        .benefit-card {
+            background: white;
+            padding: 36px;
+            border-radius: 16px;
+            text-align: center;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .benefit-card:hover {
+            border-color: var(--kelly-green);
+            transform: translateY(-6px);
+            box-shadow: 0 12px 40px rgba(0, 168, 120, 0.15);
+        }
+
+        .benefit-icon {
+            width: 72px;
+            height: 72px;
+            background: linear-gradient(135deg, var(--kelly-green) 0%, var(--kelly-green-dark) 100%);
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            margin: 0 auto 20px;
+            box-shadow: 0 8px 24px rgba(0, 168, 120, 0.25);
+        }
+
+        .benefit-card h3 {
+            font-size: 22px;
+            margin-bottom: 12px;
+            color: var(--kelly-blue);
+        }
+
+        .benefit-card p {
+            color: var(--text-gray);
+            line-height: 1.7;
+        }
+
+        /* ===== TESTIMONIALS ===== */
+        .testimonials {
+            padding: 80px 24px;
+            background: white;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 32px;
+        }
+
+        .testimonial {
+            background: var(--bg-light);
+            padding: 36px;
+            border-radius: 16px;
+            position: relative;
+        }
+
+        .quote-icon {
+            font-size: 56px;
+            color: var(--kelly-green);
+            opacity: 0.2;
+            position: absolute;
+            top: 24px;
+            right: 24px;
+        }
+
+        .stars {
+            color: #FFB800;
+            font-size: 20px;
+            margin-bottom: 16px;
+        }
+
+        .testimonial-text {
+            font-size: 16px;
+            color: var(--text-gray);
+            line-height: 1.8;
+            margin-bottom: 24px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .author {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .author-avatar {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--kelly-green) 0%, var(--kelly-green-dark) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 800;
+            font-size: 22px;
+        }
+
+        .author-name {
+            font-weight: 700;
+            font-size: 17px;
+            color: var(--kelly-blue);
+        }
+
+        .author-role {
+            font-size: 14px;
+            color: var(--text-gray);
+        }
+
+        /* ===== FINAL CTA ===== */
+        .final-cta {
+            padding: 100px 24px;
+            background: linear-gradient(135deg, var(--kelly-blue) 0%, var(--kelly-blue-light) 100%);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .final-cta::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: radial-gradient(circle at 50% 50%, rgba(0, 168, 120, 0.15) 0%, transparent 70%);
+        }
+
+        .final-cta h2 {
+            font-size: 52px;
+            color: white;
+            margin-bottom: 24px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .final-cta p {
+            font-size: 22px;
+            color: rgba(255, 255, 255, 0.95);
+            margin-bottom: 48px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-btn-large {
+            background: var(--kelly-green);
+            color: white;
+            padding: 20px 56px;
+            border-radius: 12px;
+            font-size: 20px;
+            font-weight: 800;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 8px 30px rgba(0, 168, 120, 0.4);
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-btn-large:hover {
+            background: var(--kelly-green-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 40px rgba(0, 168, 120, 0.5);
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            background: var(--kelly-blue);
+            color: rgba(255, 255, 255, 0.8);
+            padding: 60px 24px 30px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 48px;
+            margin-bottom: 40px;
+        }
+
+        .footer h4 {
+            color: white;
+            font-size: 18px;
+            margin-bottom: 20px;
+            font-weight: 800;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--kelly-green);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 30px;
+            text-align: center;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 42px; }
+            .section-title { font-size: 36px; }
+            .job-title { font-size: 22px; }
+            .search-box { flex-direction: column; }
+            .hero-stats { gap: 24px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="brand-logo">
+                        <div class="logo-icon">💼</div>
+                        <div class="logo-text">
+                            <h3>JobOpeningsNearYou</h3>
+                            <p>Find Local Jobs</p>
+                        </div>
+                    </div>
+                    <div class="kelly-badge">
+                        <span>🤝</span>
+                        <span>Powered by</span>
+                        <span class="kelly-logo-text">Kelly Services</span>
+                    </div>
+                </div>
+                <button class="header-cta" onclick="findJobs()">Search Jobs</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="live-dot"></span>
+                    <span>12,500+ NEW JOBS POSTED THIS WEEK</span>
+                </div>
+                
+                <h1>
+                    Find <span class="highlight">Local Jobs</span><br>
+                    Near You Today
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Discover thousands of opportunities with Kelly Services.<br>
+                    Full-time, part-time, temp-to-hire. Apply in minutes.
+                </p>
+
+                <div class="search-box">
+                    <input type="text" class="search-input" placeholder="Job title, keyword, or company...">
+                    <button class="search-btn" onclick="findJobs()">Find Jobs</button>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">45K+</div>
+                        <div class="stat-label">Active Jobs</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">$18-35</div>
+                        <div class="stat-label">Hourly Range</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">500K+</div>
+                        <div class="stat-label">Placements Yearly</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted By -->
+    <section class="trusted">
+        <div class="container">
+            <div class="trusted-content">
+                <div class="trusted-title">Trusted by Leading Employers</div>
+                <div class="companies">
+                    <div class="company-logo">Amazon</div>
+                    <div class="company-logo">Microsoft</div>
+                    <div class="company-logo">Walmart</div>
+                    <div class="company-logo">Target</div>
+                    <div class="company-logo">Boeing</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Jobs -->
+    <section class="jobs-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">💼 Featured Opportunities</div>
+                <h2 class="section-title">Jobs Available Now</h2>
+                <p class="section-subtitle">Hand-picked positions from top employers in your area</p>
+            </div>
+
+            <div class="jobs-grid">
+                <!-- Job 1 -->
+                <div class="job-card">
+                    <div class="job-header">
+                        <div class="job-info">
+                            <h3 class="job-title">Warehouse Associate</h3>
+                            <div class="job-company">
+                                <span>Major Distribution Center</span>
+                                <span class="kelly-tag">Kelly</span>
+                            </div>
+                            <div class="job-badges">
+                                <span class="badge">Full-Time</span>
+                                <span class="badge">Temp-to-Hire</span>
+                            </div>
+                        </div>
+                        <div class="job-salary">$18-22/hr</div>
+                    </div>
+                    <div class="job-details">
+                        <div class="detail-item">
+                            <span class="detail-icon">📍</span>
+                            <span>Multiple Locations</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">⏰</span>
+                            <span>All Shifts Available</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">📊</span>
+                            <span>No Experience Required</span>
+                        </div>
+                    </div>
+                    <p class="job-description">
+                        Join a fast-paced warehouse team. Load, unload, and organize inventory. Multiple shift options including day, evening, and overnight. Full training provided. Opportunity to convert to permanent.
+                    </p>
+                    <div class="job-benefits">
+                        <span class="benefit">✓ Weekly Pay</span>
+                        <span class="benefit">✓ Benefits Available</span>
+                        <span class="benefit">✓ Paid Training</span>
+                        <span class="benefit">✓ Career Growth</span>
+                    </div>
+                    <div class="job-footer">
+                        <div class="urgency">
+                            <span>🔥</span>
+                            <span>850+ positions open</span>
+                        </div>
+                        <button class="apply-btn" onclick="findJobs()">
+                            Apply Now →
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Job 2 -->
+                <div class="job-card">
+                    <div class="job-header">
+                        <div class="job-info">
+                            <h3 class="job-title">Administrative Assistant</h3>
+                            <div class="job-company">
+                                <span>Fortune 500 Company</span>
+                                <span class="kelly-tag">Kelly</span>
+                            </div>
+                            <div class="job-badges">
+                                <span class="badge">Full-Time</span>
+                                <span class="badge">Office</span>
+                            </div>
+                        </div>
+                        <div class="job-salary">$20-26/hr</div>
+                    </div>
+                    <div class="job-details">
+                        <div class="detail-item">
+                            <span class="detail-icon">📍</span>
+                            <span>Downtown Location</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">⏰</span>
+                            <span>Monday - Friday</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">📊</span>
+                            <span>Entry to Mid-Level</span>
+                        </div>
+                    </div>
+                    <p class="job-description">
+                        Support executives in a professional office environment. Handle scheduling, correspondence, data entry, and office coordination. Great opportunity to work with a leading company. Professional development encouraged.
+                    </p>
+                    <div class="job-benefits">
+                        <span class="benefit">✓ Medical/Dental</span>
+                        <span class="benefit">✓ 401(k)</span>
+                        <span class="benefit">✓ PTO</span>
+                        <span class="benefit">✓ Professional Growth</span>
+                    </div>
+                    <div class="job-footer">
+                        <div class="urgency">
+                            <span>🔥</span>
+                            <span>High demand role</span>
+                        </div>
+                        <button class="apply-btn" onclick="findJobs()">
+                            Apply Now →
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Job 3 -->
+                <div class="job-card">
+                    <div class="job-header">
+                        <div class="job-info">
+                            <h3 class="job-title">Customer Service Representative</h3>
+                            <div class="job-company">
+                                <span>Tech Company</span>
+                                <span class="kelly-tag">Kelly</span>
+                            </div>
+                            <div class="job-badges">
+                                <span class="badge">Full-Time</span>
+                                <span class="badge">Remote Option</span>
+                            </div>
+                        </div>
+                        <div class="job-salary">$17-23/hr</div>
+                    </div>
+                    <div class="job-details">
+                        <div class="detail-item">
+                            <span class="detail-icon">📍</span>
+                            <span>Work From Home</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">⏰</span>
+                            <span>Flexible Schedule</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">📊</span>
+                            <span>Training Provided</span>
+                        </div>
+                    </div>
+                    <p class="job-description">
+                        Assist customers via phone, email, and chat. Resolve inquiries and provide excellent service. Work from home opportunity with flexible scheduling. Full training and support provided. Equipment provided.
+                    </p>
+                    <div class="job-benefits">
+                        <span class="benefit">✓ 100% Remote</span>
+                        <span class="benefit">✓ Equipment Provided</span>
+                        <span class="benefit">✓ Performance Bonuses</span>
+                        <span class="benefit">✓ Advancement</span>
+                    </div>
+                    <div class="job-footer">
+                        <div class="urgency">
+                            <span>🔥</span>
+                            <span>600+ hiring nationwide</span>
+                        </div>
+                        <button class="apply-btn" onclick="findJobs()">
+                            Apply Now →
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Job 4 -->
+                <div class="job-card">
+                    <div class="job-header">
+                        <div class="job-info">
+                            <h3 class="job-title">Manufacturing Production Worker</h3>
+                            <div class="job-company">
+                                <span>Automotive Supplier</span>
+                                <span class="kelly-tag">Kelly</span>
+                            </div>
+                            <div class="job-badges">
+                                <span class="badge">Full-Time</span>
+                                <span class="badge">Manufacturing</span>
+                            </div>
+                        </div>
+                        <div class="job-salary">$19-25/hr</div>
+                    </div>
+                    <div class="job-details">
+                        <div class="detail-item">
+                            <span class="detail-icon">📍</span>
+                            <span>Industrial Park</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">⏰</span>
+                            <span>1st & 2nd Shift</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">📊</span>
+                            <span>Entry Level OK</span>
+                        </div>
+                    </div>
+                    <p class="job-description">
+                        Operate production equipment and assembly lines. Quality-focused manufacturing environment. Overtime available. Excellent path to permanent employment. Shift differentials for 2nd and 3rd shift.
+                    </p>
+                    <div class="job-benefits">
+                        <span class="benefit">✓ Overtime Pay</span>
+                        <span class="benefit">✓ Shift Differential</span>
+                        <span class="benefit">✓ Safety Training</span>
+                        <span class="benefit">✓ Temp-to-Perm</span>
+                    </div>
+                    <div class="job-footer">
+                        <div class="urgency">
+                            <span>🔥</span>
+                            <span>Immediate start available</span>
+                        </div>
+                        <button class="apply-btn" onclick="findJobs()">
+                            Apply Now →
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Kelly -->
+    <section class="why-kelly">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">🌟 Kelly Advantage</div>
+                <h2 class="section-title">Why Work with Kelly Services?</h2>
+                <p class="section-subtitle">75+ years connecting talent with opportunity</p>
+            </div>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">💼</div>
+                    <h3>Trusted Leader</h3>
+                    <p>America's #1 staffing company with 75+ years of experience matching talent with opportunities.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡</div>
+                    <h3>Quick Placement</h3>
+                    <p>Many candidates start within 24-48 hours. Fast application process and rapid job placement.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h3>Weekly Pay</h3>
+                    <p>Get paid weekly with direct deposit. No waiting for your hard-earned money.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🏥</div>
+                    <h3>Great Benefits</h3>
+                    <p>Medical, dental, vision insurance available. 401(k) retirement plan options.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">📈</div>
+                    <h3>Career Growth</h3>
+                    <p>Many temp positions convert to permanent. Build your career with top employers.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🤝</div>
+                    <h3>Personal Support</h3>
+                    <p>Dedicated recruiters support you every step. We're invested in your success.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">⭐ Success Stories</div>
+                <h2 class="section-title">Hear From Our Talent</h2>
+                <p class="section-subtitle">Real people, real careers</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <div class="quote-icon">"</div>
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Kelly Services found me a warehouse job within 2 days. Started working immediately and after 3 months, the company hired me permanently. Best decision I ever made!"
+                    </p>
+                    <div class="author">
+                        <div class="author-avatar">MJ</div>
+                        <div>
+                            <div class="author-name">Michael Johnson</div>
+                            <div class="author-role">Warehouse Supervisor</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="quote-icon">"</div>
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        "After being laid off, Kelly helped me get back to work fast. My recruiter was amazing - supportive and always available. Now I have a great office job with benefits!"
+                    </p>
+                    <div class="author">
+                        <div class="author-avatar">SR</div>
+                        <div>
+                            <div class="author-name">Sarah Rodriguez</div>
+                            <div class="author-role">Administrative Assistant</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="quote-icon">"</div>
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        "The flexibility is perfect for me as a parent. I can choose assignments that fit my schedule. Weekly pay is a huge plus. Kelly treats their employees well!"
+                    </p>
+                    <div class="author">
+                        <div class="author-avatar">DW</div>
+                        <div>
+                            <div class="author-name">David Williams</div>
+                            <div class="author-role">Customer Service Rep</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Ready to Start Your New Career?</h2>
+            <p>Join 500,000+ people who found their perfect job with Kelly Services</p>
+            <button class="cta-btn-large" onclick="findJobs()">
+                🚀 Search Jobs Near You
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4>JobOpeningsNearYou</h4>
+                    <p style="margin-top: 12px; line-height: 1.7; font-size: 14px;">
+                        Connecting job seekers with local opportunities through Kelly Services staffing solutions.
+                    </p>
+                </div>
+                <div>
+                    <h4>Job Seekers</h4>
+                    <ul class="footer-links">
+                        <li><a href="#jobs">Browse Jobs</a></li>
+                        <li><a href="#apply">Apply Now</a></li>
+                        <li><a href="#resources">Career Resources</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Kelly</a></li>
+                        <li><a href="#employers">For Employers</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#locations">Locations</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                        <li><a href="#eeo">EEO Statement</a></li>
+                        <li><a href="#accessibility">Accessibility</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 JobOpeningsNearYou • Powered by Kelly Services. All rights reserved.</p>
+                <p style="margin-top: 8px; font-size: 12px; opacity: 0.7;">
+                    Kelly Services is a registered trademark. Equal Opportunity Employer.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // CPA OFFER URL
+        const KELLY_JOBS_URL = 'https://www.mz1ay3ch.com/8XJCJGC/CPBX21T/';
+
+        function findJobs() {
+            console.log('💼 Kelly Services Jobs - Redirecting to:', KELLY_JOBS_URL);
+            
+            // Analytics (optional)
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'job_search', {
+                    'event_category': 'Kelly Services',
+                    'event_label': 'Job Search Click',
+                    'value': 1
+                });
+            }
+            
+            window.location.href = KELLY_JOBS_URL;
+        }
+    </script>
+</body>
+</html>
